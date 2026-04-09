@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Yot - My Forever Love 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="auto">
+        <!-- Add your romantic music file here -->
+    </audio>
+
+    <!-- Cover Page -->
+    <div class="page active" id="cover">
+        <div class="cover-content">
+            <div class="heart-float"><i class="fas fa-heart"></i></div>
+            <h1 class="diary-title">For Yot</h1>
+            <p class="diary-subtitle">My heart wrote this just for you... because you deserve to know how much you mean to me 💕</p>
+            <button class="open-diary-btn" onclick="nextPage()">
+                <i class="fas fa-book-open"></i> Open Diary
+            </button>
+            <div class="signature">From someone who loves you more than words can say ✨</div>
+        </div>
+    </div>
+
+    <!-- Page Navigation -->
+    <nav class="page-nav">
+        <button class="nav-btn prev-btn" onclick="prevPage()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nav-btn next-btn" onclick="nextPage()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="page-indicator" id="pageIndicator"></div>
+    </nav>
+
+    <!-- Intro Page -->
+    <div class="page" id="intro">
+        <div class="diary-page">
+            <div class="page-header">
+                <span class="date">Today 💌</span>
+                <h2 class="memory-title">Yot,</h2>
+            </div>
+            <div class="page-content">
+                <p>Every time I think of you, my heart does this little happy dance. I made this diary because... you deserve to know how you make me feel. Every. Single. Day.</p>
+                <div class="typewriter" data-text="You're my safe place, my favorite smile, my reason to believe in forever.">
+                    <span class="cursor">|</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Page 1 - Yot Photo -->
+    <div class="page" id="memory1">
+        <div class="diary-page">
+            <div class="page-header">
+                <span class="date">That First Moment 😍</span>
+                <h2 class="memory-title">When I Saw You</h2>
+            </div>
+            <div class="page-content">
+                <div class="memory-image">
+                    <img src="yot.png" alt="Yot - My beautiful love">
+                </div>
+                <p>Look at you. That smile. Those eyes. The first time I saw you, my brain said "whoa" but my heart said "mine". You've been ruining me for anyone else since day one.</p>
+                <p class="highlight">"Yot, you're the kind of beautiful that stays with you."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Page 2 - Yot1 Photo -->
+    <div class="page" id="memory2">
+        <div class="diary-page">
+            <div class="page-header">
+                <span class="date">Our Laughs 😂</span>
+                <h2 class="memory-title">Your Laughter</h2>
+            </div>
+            <div class="page-content">
+                <div class="memory-image">
+                    <img src="yot1.png" alt="Yot laughing - my favorite sound">
+                </div>
+                <p>Your laugh is my weakness. The way you cover your mouth when something's really funny? I live for that. You make even my bad days feel like adventures.</p>
+                <p class="highlight">"Hearing you laugh is my favorite notification."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Page 3 - Yot2 Photo -->
+    <div class="page" id="memory3">
+        <div class="diary-page">
+            <div class="page-header">
+                <span class="date">Quiet Moments 🤗</span>
+                <h2 class="memory-title">Just Us</h2>
+            </div>
+            <div class="page-content">
+                <div class="memory-image">
+                    <img src="yot2.png" alt="Yot - my peaceful place">
+                </div>
+                <p>We may only meet through chats and calls, but every message from you means everything to me. In those simple moments, I feel something real—something I never expected to find online.</p>
+                <p class="highlight">"Distance doesn’t stop hearts that truly connect."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Page 4 - Yot3 Photo -->
+    <div class="page" id="memory4">
+        <div class="diary-page">
+            <div class="page-header">
+                <span class="date">Your Kindness 💖</span>
+                <h2 class="memory-title">Your Heart</h2>
+            </div>
+            <div class="page-content">
+                <div class="memory-image">
+                    <img src="yot3.png" alt="Yot's beautiful heart">
+                </div>
+                <p>The way you care about people, the little things you notice, how you make everyone feel special... that's your magic. And somehow, you chose me too.</p>
+                <p class="highlight">"Your heart is bigger than your hugs - and that's saying something."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Page 5 - Yot4 Photo -->
+    <div class="page" id="memory5">
+        <div class="diary-page">
+            <div class="page-header">
+                <span class="date">Dreaming Together 🌟</span>
+                <h2 class="memory-title">Our Future</h2>
+            </div>
+            <div class="page-content">
+                <div class="memory-image">
+                    <img src="yot4.png" alt="Yot - my forever">
+                </div>
+                <p>I think about the moment we finally see each other in real life—the nervous smiles, the quiet excitement, the feeling of “it’s really you.” I hold onto that day like a promise.</p>
+<p class="highlight">"One day, distance will lose and we’ll finally win."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Special Yot5 Photo Page -->
+    <div class="page" id="special">
+        <div class="diary-page">
+            <div class="page-header">
+                <span class="date">Right Now 💝</span>
+                <h2 class="memory-title">Just Because</h2>
+            </div>
+            <div class="page-content">
+                <div class="memory-image full-width">
+                    <img src="yot5.png" alt="Yot - perfect just like this">
+                </div>
+                <p>Yot, you're it. The one. My person. I don't need fancy reasons. I just love you. Today. Tomorrow. Always.</p>
+                <div class="love-list">
+                    <div class="love-item">😍 Your sleepy morning face</div>
+                    <div class="love-item">🤪 When you dance badly</div>
+                    <div class="love-item">🥰 How you steal my hoodies</div>
+                    <div class="love-item">😘 Your surprise hugs</div>
+                    <div class="love-item">💕 Everything. Always.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Love Letter -->
+    <div class="page" id="final">
+        <div class="final-page">
+            <div class="love-letter">
+                <h2>💌 My Promise, Yot</h2>
+                <div class="letter-content">
+                    <p>Yot,</p>
+                    <p>I promise to be your safe place when life gets heavy. I'll be your biggest cheerleader, your soft landing, your late-night talks partner.</p>
+                    <p>I'll choose you every day - in the messy mornings, the quiet evenings, the crazy adventures. You're my favorite choice.</p>
+                    <p>Thank you for loving me back. Thank you for being you. Thank you for making my ordinary life feel like a love story.</p>
+                    <p class="signature-love">I love you more than coffee, sunsets, and good sleep combined,<br><span class="your-name">Your person forever</span></p>
+                </div>
+                <div class="final-hearts">
+                    <i class="fas fa-heart heart-float-final"></i>
+                    <i class="fas fa-heart heart-float-final"></i>
+                    <i class="fas fa-heart heart-float-final"></i>
+                </div>
+            </div>
+            <button class="restart-btn" onclick="restartDiary()">Read Again for Yot 💕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
